@@ -3,11 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FakeStore API</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
+    <nav>
+ <i class="fa fa-plus-square-o add_icon" id="add_icon" ></i>
+        <input class="search" type="text" placeholder="البحث عن منتج ">
+       
+    </nav>
+
+
+
+
+
+    <div id="form_div">
+        <form action="">
+            <label for="name">الاسم </label>
+            <input id="name" type="text">
+            <label for="price">السعر</label>
+            <input id="price" type="number">
+            <label for="description">الوصف</label>
+            <textarea id="description" type="text"></textarea>
+            <label for="category">الفئة</label>
+            <input id="category" type="text">
+            <label for="img_url">رابط الصورة</label>
+            <input id="img_url" type="text">
+            <div class="buts">
+                  <button id="x_but">الغاء</button>
+                <button id="add_but">اضافة</button>
+              
+            </div>
+        </form>
+    </div>
+    <!-- <div>add to p : "fa fa-cart-plus"</div> -->
 
 
     <script src="main.js"></script>
