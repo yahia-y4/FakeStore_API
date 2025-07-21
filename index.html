@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,29 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <nav>
- <i class="fa fa-plus-square-o add_icon" id="add_icon" ></i>
+        <i class="fa fa-plus-square-o add_icon" id="add_icon"></i>
         <input class="search" type="text" placeholder="البحث عن منتج ">
-       
+
     </nav>
 
+
+    <div id="products_container">
+
+        <!-- ..... -->
+        <div class="one_product">
+            <img src="img.png" alt="">
+            <div class="info">
+                <div class="title">yahia</div>
+                <div class="price">120 <span>$</span></div>
+                <div class="add_to_p fa fa-cart-plus"></div>
+            </div>
+        </div>
+        <!-- ..... -->
+
+    </div>
 
 
 
@@ -31,15 +48,28 @@
             <label for="img_url">رابط الصورة</label>
             <input id="img_url" type="text">
             <div class="buts">
-                  <button id="x_but">الغاء</button>
+                <button id="x_but">الغاء</button>
                 <button id="add_but">اضافة</button>
-              
+
             </div>
         </form>
     </div>
-    <!-- <div>add to p : "fa fa-cart-plus"</div> -->
+
+
+    <div id="add_to_p_div">
+        <div class="add_to_p_box">
+            <p>هل تريد اضافة هذا المنتج الى السلة؟</p>
+            <div class="add_to_p_buts">
+                <button id="add_to_p_yes">اضافة</button>
+                <button id="add_to_p_no">الغاء</button>
+            </div>
+
+        </div>
+    </div>
+
 
 
     <script src="main.js"></script>
 </body>
+
 </html>
