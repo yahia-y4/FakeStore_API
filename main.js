@@ -102,3 +102,38 @@ if(!name || !price || !description || !category || !img_url){
 
   }
 }
+
+
+document.getElementById("search").oninput = () => {
+  let s_value = document.getElementById("search").value.trim();
+let filteredItems 
+if(s_value ==""){
+  filteredItems = all_items
+}else{
+ filteredItems = all_items.filter(item =>
+    item.title.includes(s_value)
+  );
+}
+  document.getElementById("products_container").innerHTML = ""
+filteredItems.forEach((item) => {
+
+    document.getElementById("products_container").innerHTML += `
+        
+            <div class="one_product">
+            <img src=${item.image} alt="">
+            <div class="info">
+                <div class="title">${item.title}</div>
+                <div class="price">${item.price} <span>$</span></div>
+                <div class="add_to_p fa fa-cart-plus" ></div>
+            </div>
+        </div>
+        
+        `;})
+  const items = document.querySelectorAll(".add_to_p");
+  items.forEach((item) => {
+    item.addEventListener("click", () => {
+      document.getElementById("add_to_p_div").style.display = "flex";
+    });
+  });
+ 
+};
