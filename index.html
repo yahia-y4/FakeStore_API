@@ -12,7 +12,7 @@
 <body>
     <nav>
         <i class="fa fa-plus-square-o add_icon" id="add_icon"></i>
-        <input class="search" type="text" placeholder="البحث عن منتج ">
+        <input class="search" id="search" type="text" placeholder="البحث عن منتج ">
 
     </nav>
 
@@ -20,14 +20,14 @@
     <div id="products_container">
 
         <!-- ..... -->
-        <div class="one_product">
+        <!-- <div class="one_product">
             <img src="img.png" alt="">
             <div class="info">
                 <div class="title">yahia</div>
                 <div class="price">120 <span>$</span></div>
                 <div class="add_to_p fa fa-cart-plus"></div>
             </div>
-        </div>
+        </div> -->
         <!-- ..... -->
 
     </div>
@@ -38,15 +38,15 @@
     <div id="form_div">
         <form action="">
             <label for="name">الاسم </label>
-            <input id="name" type="text">
+            <input id="name" type="text" required>
             <label for="price">السعر</label>
-            <input id="price" type="number">
+            <input id="price" type="number" required>
             <label for="description">الوصف</label>
-            <textarea id="description" type="text"></textarea>
+            <textarea id="description" type="text" required></textarea>
             <label for="category">الفئة</label>
-            <input id="category" type="text">
+            <input id="category" type="text" required>
             <label for="img_url">رابط الصورة</label>
-            <input id="img_url" type="text">
+            <input id="img_url" type="text" required>
             <div class="buts">
                 <button id="x_but">الغاء</button>
                 <button id="add_but">اضافة</button>
